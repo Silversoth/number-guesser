@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"NumberGuesser","l":"HandledException"},{"p":"NumberGuesser","l":"Main"},{"p":"NumberGuesser","l":"Player"},{"p":"NumberGuesser","l":"RNG"}];updateSearchResults();
