@@ -373,29 +373,6 @@ public class Main {
 
 
 
-/*
-MY RULES:
-- you pick a difficulty
-- the game generates a number randomly
-- user must try to guess in 3 attempts, they get more points the fewer attempts needed
-   1st attempt: 100 pts
-   2nd attempt: 50 pts
-   3rd attempt: 25 pts
-- after each failed attempt the game will tell them if they need to guess higher or lower
 
-
-This is a simple project that you can complete quickly and add to your portfolio, especially if you are a novice.
-In the number guessing game, you must create an app that generates a random number that the user must guess. Users will receive
-points if they guess correctly.
-
-The rules of the number guessing game are completely up to you. For example, you may set a limit on the number of attempts, choose
-a range for number generation, and award points based on the number of attempts, among other things.
-
-In the number guessing game, the computer must generate a random number from 1 to 100 that falls within the set range.
-
-After that, the user is asked to guess the number and enter it in an input area. After comparing the generated number with
-the user's input, the user will receive a message indicating whether their guess was correct or
-incorrect with respect to the randomly created number.
- */
 
 
