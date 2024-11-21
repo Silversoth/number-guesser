@@ -27,13 +27,13 @@ Welcome to the Number Guesser Game! This is a simple console-based game where pl
 2. **Compile the Program**:
    Navigate to the `src` directory and compile the Java files:
    ```bash
-   javac NumberGuesser/*.java
+   javac numberguesser/*.java
    ```
 
 3. **Run the Program**:
    Execute the `Main` class to start the game:
    ```bash
-   java NumberGuesser.Main
+   java numberguesser.Main
    ```
 
 ## How to Play

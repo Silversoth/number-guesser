@@ -1,4 +1,4 @@
-package NumberGuesser;
+package numberguesser;
 
 /**
  * Custom exception class that includes an error code along with the message.

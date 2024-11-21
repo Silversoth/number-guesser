@@ -1,4 +1,4 @@
-package NumberGuesser;
+package numberguesser;
 
 import java.io.Externalizable;
 import java.io.IOException;

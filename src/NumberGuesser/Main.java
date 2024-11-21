@@ -1,4 +1,4 @@
-package NumberGuesser;
+package numberguesser;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -16,7 +16,6 @@ import static java.lang.System.*;
 public class Main {
     private static final String ERROR_MSG = "OPERATION FAILED: ";
 
-
     /**
      * The main method to start the Number Guesser game.
      * Initializes the game environment, loads player data, and manages game flow.
@@ -31,6 +30,7 @@ public class Main {
 
         out.println("WELCOME TO THE NUMBER GUESSER GAME \n");
         out.println("What is your name: ");
+
 
         try {
             Scanner sc = new Scanner(in);
@@ -364,6 +364,8 @@ public class Main {
         PrintStream ps = new PrintStream(fos);
         System.setErr(ps);
     }
+
+
 
 
 }
