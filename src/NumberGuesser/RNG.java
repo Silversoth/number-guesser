@@ -1,4 +1,4 @@
-package NumberGuesser;
+package numberguesser;
 //RANDOM NUMBER GENERATOR CLASS
 
 import java.util.Random;
@@ -23,6 +23,7 @@ public class RNG {
         this.result = Math.abs(r.nextInt(max - min) + min);
         this.min = min;
         this.max = max;
+
     }
 
 }
