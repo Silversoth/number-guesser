@@ -1,5 +1,6 @@
 numberguesser\HandledException.class
+module-info.class
+numberguesser\package-info.class
 numberguesser\Main.class
 numberguesser\Player.class
 numberguesser\RNG.class
-package-info.class

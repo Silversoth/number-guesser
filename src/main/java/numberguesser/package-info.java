@@ -1,3 +1,4 @@
+package numberguesser;
 /**
  * The `numberguesser` package contains classes and interfaces for implementing
  * a number guessing game. This package includes the following components:
@@ -17,4 +18,4 @@
  * can choose difficulty levels, attempt to guess numbers, and have their scores
  * tracked across sessions.
  */
-package numberguesser;
+
