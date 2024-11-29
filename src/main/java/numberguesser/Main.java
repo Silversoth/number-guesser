@@ -52,8 +52,6 @@ public class Main {
 
                 inputDiff = getValidDifficulty(sc);
                 //ONLY PASS THIS IF THE INPUT WAS WITHIN ACCEPTABLE RANGE
-
-
                 //DIFFICULTY LEVEL
                 //USING A MAP TO STORE THE 3 DIFFICULTIES
                 Map<Integer, RNG> difficultyMap = new HashMap<>();
@@ -123,7 +121,7 @@ public class Main {
         int tries = 3;
         int result = random.result;
 
-        out.printf("guess the number from %d to %d. You have %d tries left", random.min, random.max, tries);
+        out.printf("guess the number from %d to %d. You have %d tries left %n", random.min, random.max, tries);
 
         //GET THE GUESS
         Scanner sc = new Scanner(in);
@@ -215,7 +213,7 @@ public class Main {
      * @throws IOException If an input or output exception occurs
      */
     public static void save(Set<Player> playerList) throws IOException {
-        File scoreboard = new File("scoreboard.txt");
+        File scoreboard = new File("scoreboard.dat");
         if (!Files.exists(scoreboard.toPath())) {
             Files.createFile(scoreboard.toPath());
         }
@@ -271,7 +269,7 @@ public class Main {
      */
     public static Set<Player> load() throws IOException {
         Set<Player> playerList = new HashSet<>();
-        File scoreboard = new File("scoreboard.txt");
+        File scoreboard = new File("scoreboard.dat");
         if (!Files.exists(scoreboard.toPath())) {
             Files.createFile(scoreboard.toPath());
         }
