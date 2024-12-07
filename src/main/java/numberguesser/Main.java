@@ -15,15 +15,13 @@ import numberguesser.view.GameView;
  * This class initializes the game model, controller, and view, and sets the initial scene for the application.
  */
 public class Main extends Application {
-    private static final String ERROR_MSG = "OPERATION FAILED: ";
 
     /**
      * The main method that launches the JavaFX application.
      *
      * @param args command-line arguments passed to the application
-     * @throws IOException if an I/O error occurs during application launch
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         launch(args);
     }
 
