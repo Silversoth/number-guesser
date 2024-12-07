@@ -1,25 +1,27 @@
 package numberguesser;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+
 /**
- * Custom exception class that includes an error code along with the message.
+ * The `HandledException` class represents a custom exception with an associated error code.
  *
- * <p>This class extends the standard Exception class and adds a code attribute
- * to provide additional context about the exception. It provides constructors
- * to initialize the exception with a message, a code, and optionally a cause.</p>
+ * <p>This class extends the standard `Exception` class and adds an additional attribute for an error code,
+ * providing more context about the error. It includes constructors to create an exception with a message,
+ * an error code, and optionally a cause. Accessor methods are available to retrieve and modify the error code.</p>
  *
- * <p>Methods are provided to get and set the error code.</p>
+ * <p>Additionally, this class provides a utility method to redirect the standard error stream (`System.err`)
+ * to a file, allowing for error logging to a specified file path.</p>
  */
 public class HandledException extends Exception {
     private String code;
 
     /**
-     * Represents a custom exception with an associated error code.
-     *
-     * <p>This exception class extends {@code Exception} and includes an additional
-     * attribute for an error code, providing more context about the error. It offers
-     * constructors to create an exception with a message, an error code, and optionally
-     * a cause. Accessor methods are available to retrieve and modify the error code.</p>
-     * Constructs a new HandledException with the specified error code and message.
+     * Constructs a new `HandledException` with the specified error code and message.
      *
      * @param code    the error code associated with the exception
      * @param message the detail message explaining the exception
@@ -30,10 +32,11 @@ public class HandledException extends Exception {
     }
 
     /**
-     * Constructs a new HandledException with the specified error code and message.
+     * Constructs a new `HandledException` with the specified error code, message, and cause.
      *
      * @param code    the error code associated with the exception
      * @param message the detail message explaining the exception
+     * @param cause   the cause of the exception
      */
     public HandledException(String code, String message, Throwable cause) {
         super(message, cause);
@@ -56,5 +59,30 @@ public class HandledException extends Exception {
      */
     public void setCode(String code) {
         this.code = code;
+    }
+
+    /**
+     * Redirects the standard error stream (`System.err`) to a file named "error.txt".
+     *
+     * <p>If the file does not exist, it will be created. This method appends error messages
+     * to the file, allowing for persistent error logging.</p>
+     */
+    public static void redirectErrorStream() {
+        Path errorFilePath = Path.of("error.txt");
+        try {
+            // Create the file if it doesn't exist
+            if (Files.notExists(errorFilePath)) {
+                Files.createFile(errorFilePath);
+            }
+
+            // Redirect System.err to the file
+            FileOutputStream fos = new FileOutputStream(errorFilePath.toFile(), true); // Append mode
+            PrintStream ps = new PrintStream(fos);
+            System.setErr(ps);
+
+        } catch (IOException e) {
+            // Handle any IOExceptions that occur during file operations
+            System.err.println("Failed to redirect error stream: " + e.getMessage());
+        }
     }
 }

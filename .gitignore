@@ -2,6 +2,11 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+!**/src/main/**/scoreboard.dat
+scoreboard.dat
+
+### Maven ###
+target/
 
 ### Eclipse ###
 .apt_generated

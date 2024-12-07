@@ -1,74 +1,120 @@
-# Number Guesser Game
+# Number Guesser
 
-Welcome to the Number Guesser Game! This is a simple console-based game where players attempt to guess a randomly generated number within a specified range. The game keeps track of player scores across sessions, allowing players to improve their scores over time.
+A JavaFX-based number guessing game with persistent player scores and multiple difficulty levels.
 
-## Features
+## Prerequisites
 
-- **Multiple Difficulty Levels**: Choose from three difficulty levels, each with a different range of numbers.
-- **Persistent Scores**: Player scores are saved and loaded from a file, allowing scores to persist across game sessions.
-- **Custom Exception Handling**: Uses a custom exception class to handle errors with additional context.
-- **Serialization**: Player data is serialized to maintain state between sessions.
+- Java JDK 21
+- Maven
+- JavaFX 21
 
-## Getting Started
+## Building
 
-### Prerequisites
+```bash
+mvn clean install
+```
 
-- Java Development Kit (JDK) 8 or higher
-- A Java IDE or command-line tools to compile and run the program
+## Running
+```
+mvn javafx:run
+```
 
-### Installation
+## Project Structure
+```
+src/main/java/
+└── numberguesser/
+    ├── controller/
+    │   └── GameController.java
+    ├── model/
+    │   ├── GameModel.java
+    │   ├── Player.java
+    │   └── RNG.java
+    ├── view/
+    │   └── GameView.java
+    ├── Main.java
+    └── HandledException.java
+```
+## Game Features
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/number-guesser-game.git
-   cd number-guesser-game
-   ```
+### Difficulty Levels
+* Easy (Level 1): Numbers 1-10
+* Medium (Level 2): Numbers 1-50
+* Hard (Level 3): Numbers 1-100
 
-2. **Compile the Program**:
-   Navigate to the `src` directory and compile the Java files:
-   ```bash
-   javac numberguesser/*.java
-   ```
+More points awarded in each difficulty the fewer tries needed.
 
-3. **Run the Program**:
-   Execute the `Main` class to start the game:
-   ```bash
-   java numberguesser.Main
-   ```
+### Gameplay
+* Three attempts per game
+* Real-time feedback on guesses
+* Score tracking and persistence
+* Player statistics by difficulty level
 
-## How to Play
+## Technical Implementation
+### Architecture
+* MVC design pattern
+* JavaFX UI framework
+* Custom exception handling with error logging
+* Serialization for data persistence
+### Core components
+* Main: Application entry point and JavaFX initialization
+* GameController: Game logic and input handling
+* GameModel: State management and data persistence
+* GameView: UI components and scene management
+* Player: Serializable player entity
+* HandledException: Custom exception handling
 
-1. **Start the Game**: Run the program, and you will be greeted with a welcome message.
-2. **Enter Your Name**: Provide your name to start or continue your game session.
-3. **Select Difficulty**: Choose a difficulty level (1 for Easy, 2 for Medium, 3 for Hard).
-4. **Guess the Number**: You have three attempts to guess the correct number. Points are awarded based on the number of attempts taken:
-   - 1st attempt: 100 points
-   - 2nd attempt: 50 points
-   - 3rd attempt: 25 points
-5. **View Scores**: After each game, your scores are displayed, and you can choose to play again or exit.
+## Dependencies
+```
+<dependencies>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>${javafx.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>${javafx.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.8.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.17.0</version>
+    </dependency>
+</dependencies>
+```
+## Testing
+```
+mvn test
+```
 
-## Code Structure
-
-- **`Main.java`**: The entry point of the game. Manages game flow, player interactions, and score persistence.
-- **`RNG.java`**: Handles random number generation within a specified range.
-- **`Player.java`**: Represents a player and manages player data, including scores and attempts.
-- **`HandledException.java`**: Custom exception class for handling errors with additional context.
+## Distribution
+The project is configured for GitHub deployment:
+```
+<distributionManagement>
+    <repository>
+        <id>github</id>
+        <name>Number-Guesser-Release-Repository</name>
+        <url>https://github.com/Silversoth/number-guesser</url>
+    </repository>
+</distributionManagement>
+```
+## Required Modules
+* javafx.graphics
+* javafx.controls
+* javafx.fxml
+* java.desktop
+* org.apache.commons.lang3
+* org.junit.jupiter.api
 
 ## Error Handling
-
-- Errors are logged to an `error.txt` file for debugging purposes.
-- Custom exceptions provide detailed error messages and codes.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+Errors are logged to error.txt through the HandledException system
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## Contact
-
-For questions or feedback, please contact [soth26@gmail.com].
-
-
+This project is maintained by Jonathan Hendrix

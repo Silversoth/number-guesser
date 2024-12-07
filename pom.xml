@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.silversoth.number-guesser</groupId>
+    <groupId>com.github.silversoth</groupId>
     <artifactId>number-guesser</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -12,8 +12,21 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javafx.version>21</javafx.version>
+        <javafx.version>20</javafx.version>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Number-Guesser-Release-Repository</name>
+            <url>https://maven.pkg.github.com/Silversoth/number-guesser</url>
+        </repository>
+        <snapshotRepository>
+            <id>github</id>
+            <name>Number-Guesser-Snapshot-Repository</name>
+            <url>https://maven.pkg.github.com/Silversoth/number-guesser</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <build>
         <pluginManagement>
@@ -45,7 +58,7 @@
                     <artifactId>javafx-maven-plugin</artifactId>
                     <version>0.0.8</version>
                     <configuration>
-                        <mainClass>numberguesser.Main</mainClass>
+                        <mainClass>number-guesser.Main</mainClass>
                     </configuration>
                     <executions>
                         <execution>
