@@ -1,6 +1,11 @@
-numberguesser\HandledException.class
+numberguesser\controller\GameController.class
+numberguesser\view\GameView.class
 module-info.class
-numberguesser\package-info.class
 numberguesser\Main.class
+numberguesser\HandledException.class
+numberguesser\package-info.class
+numberguesser\model\GameModel.class
+numberguesser\model\RNG.class
+numberguesser\model\Player.class
 numberguesser\Player.class
 numberguesser\RNG.class
