@@ -1,6 +1,11 @@
-C:\testProjects\number-guesser\src\main\java\module-info.java
-C:\testProjects\number-guesser\src\main\java\numberguesser\HandledException.java
-C:\testProjects\number-guesser\src\main\java\numberguesser\Main.java
-C:\testProjects\number-guesser\src\main\java\numberguesser\package-info.java
-C:\testProjects\number-guesser\src\main\java\numberguesser\Player.java
-C:\testProjects\number-guesser\src\main\java\numberguesser\RNG.java
+C:\My Projects\number-guesser\src\main\java\module-info.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\controller\GameController.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\HandledException.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\Main.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\model\GameModel.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\model\Player.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\model\RNG.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\package-info.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\Player.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\RNG.java
+C:\My Projects\number-guesser\src\main\java\numberguesser\view\GameView.java

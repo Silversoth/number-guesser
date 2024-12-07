@@ -1,4 +1,0 @@
---patch-module
-number.guesser=_
---add-reads
-number.guesser=ALL-UNNAMED
