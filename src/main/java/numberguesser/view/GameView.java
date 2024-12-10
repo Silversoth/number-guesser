@@ -35,11 +35,10 @@ public class GameView {
     /**
      * Constructs a GameView with the specified model, controller, and primary stage.
      *
-     * @param model the game model
      * @param controller the game controller
      * @param primaryStage the primary stage for the application
      */
-    public GameView(GameModel model, GameController controller, Stage primaryStage) {
+    public GameView(GameController controller, Stage primaryStage) {
         this.controller = controller;
         this.primaryStage = primaryStage;
         root = new BorderPane();

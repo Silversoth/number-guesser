@@ -40,7 +40,7 @@ public class Main extends Application {
         GameController gameController = new GameController(gameModel);
 
         // Initialize the view
-        GameView gameView = new GameView(gameModel, gameController, primaryStage);
+        GameView gameView = new GameView(gameController, primaryStage);
 
         // Prepare the initial scene and stage
         Scene initialScene = gameView.buildInitialScene();
