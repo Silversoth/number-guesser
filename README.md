@@ -5,11 +5,17 @@
 ---
 
 ## 📸 Preview
-![Start screen](.assets/Pic1.png)
-![In game](.assets/Pic2.png)
-![Result](.assests/Pic3.png)
+![Start screen](./Assets/Pic1.png)
+![In game](./Assets/Pic2.png)
+![Result](./Assets/Pic3.png)
 
+---
+## ✨ Features
 
+- Interactive number guessing game
+- User-friendly graphical interface with JavaFX
+- Persistent high score saved locally
+- Modular MVC structure for clean architecture
 
 ---
 
@@ -79,14 +85,19 @@ mvn clean javafx:run -f pom.xml
 ```
 
 ---
-👨‍💻 Author
-Jonathan Hendrix
-GitHub
-LinkedIn
+
+## 👨‍💻 Author
+
+**Jonathan Hendrix**  
+[GitHub](https://github.com/Silversoth)  
+[LinkedIn](https://www.linkedin.com/in/tu-linkedin) <!-- Actualiza con tu URL real -->
 
 ---
-📄 License
-This project is licensed under the MIT License.
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
 
 
 
