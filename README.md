@@ -5,9 +5,9 @@
 ---
 
 ## 📸 Preview
-![image](https://github.com/user-attachments/assets/60877894-fd24-4cef-9457-3010b04ce13f)
-![image](https://github.com/user-attachments/assets/2c283ba5-cbb1-4b67-8af4-0124808a07bf)
-![image](https://github.com/user-attachments/assets/02e0e5e5-49ea-4b36-8ee9-8f0d6a67548f)
+![Start screen](.assets/Pic1.png)
+![In game](.assets/Pic2.png)
+![Result](.assests/Pic3.png)
 
 
 
